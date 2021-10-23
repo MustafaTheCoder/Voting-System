@@ -7,3 +7,11 @@ if vote1 > vote2:
     print(f"{dec}, Is Decided!")
 else:
     print(f"{dec}, Isn't Decided!")
+
+
+
+
+
+
+
+
