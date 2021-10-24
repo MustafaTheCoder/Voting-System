@@ -1,17 +1,21 @@
-dec = input("What is the Decision?\n")
+from playsound import playsound
 
-vote1 = input("How many people vote (Yes)?\n")
-vote2 = input("How many people vote (No)?\n")
-
-if vote1 > vote2:
-    print(f"{dec}, Is Decided!")
-else:
-    print(f"{dec}, Isn't Decided!")
-
+print("""
+=========== Music Player =========== 
+[1] Play Music
+[2] Quit 
+====================================   
+""")
 
 
 
+while True:
+    user_inp = int(input("Option: "))
 
-
-
-
+    if user_inp == 1:
+        path = input("File Path: ")
+        print("Playing Audio...")
+        playsound(path)
+        
+    else:
+        break    
